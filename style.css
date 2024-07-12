@@ -9,8 +9,8 @@
 body {
   font-family: Arial, sans-serif; /* A classic 90s font */
   line-height: 1.6;
-  color: #333;
-  background-color: #f0f0f0; /* A slightly grayer background */
+  color: #FFFFFF; /* White text, dude! */
+  background-color: #33CCFF; /* A bright, electric blue background */
   background-image: url("https://www.grsites.com/archive/textures/backgrounds/background004.jpg"); /* A classic 90s texture */
   background-repeat: repeat;
 }
@@ -19,8 +19,8 @@ body {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #fff;
-  border: 2px solid #666; /* Thicker border, dude! */
+  background-color: #FFC080; /* A warm, sunny yellow background */
+  border: 2px solid #008000; /* A bright, lime green border */
   border-radius: 10px; /* A slight curve, just like a cassette tape */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* A subtle shadow, bro! */
 }
@@ -28,8 +28,8 @@ body {
 /* Header Styles */
 
 .header {
-  background-color: #0066cc; /* A bold, bright blue */
-  color: #fff;
+  background-color: #0066CC; /* A bold, bright blue */
+  color: #FFFFFF; /* White text, dude! */
   padding: 20px;
   text-align: center;
   font-size: 24px; /* Bigger font, dude! */
@@ -56,26 +56,26 @@ body {
 }
 
 .header nav a {
-  color: #fff;
+  color: #FFFFFF; /* White text, dude! */
   text-decoration: none;
   font-size: 18px; /* Bigger font, dude! */
   font-weight: bold;
-  background-color: #0099cc; /* A bright, bold hover effect */
+  background-color: #0099CC; /* A bright, bold hover effect */
   padding: 5px 10px; /* Add some padding for a retro feel */
   border-radius: 5px; /* A slight curve, bro! */
 }
 
 .header nav a:hover {
-  background-color: #00ccff; /* An even brighter hover effect */
-  color: #fff;
+  background-color: #00CCFF; /* An even brighter hover effect */
+  color: #FFFFFF; /* White text, dude! */
 }
 
 /* Profile Styles */
 
 #profile-section {
-  background-color: #f2f2f2; /* A light gray background */
+  background-color: #FFC0CB; /* A pastel pink background */
   padding: 20px;
-  border: 1px solid #ccc; /* A thin border, just like a Polaroid frame */
+  border: 1px solid #FF69B4; /* A bright, hot pink border */
   border-radius: 10px; /* A slight curve, bro! */
 }
 
@@ -108,9 +108,9 @@ body {
 /* Friends Styles */
 
 #friends-section {
-  background-color: #f2f2f2; /* A light gray background */
+  background-color: #C6E2B5; /* A pastel green background */
   padding: 20px;
-  border: 1px solid #ccc; /* A thin border, just like a Polaroid frame */
+  border: 1px solid #32CD32; /* A bright, lime green border */
   border-radius: 10px; /* A slight curve, bro! */
 }
 
@@ -132,10 +132,4 @@ body {
   height: 100px;
   border-radius: 50%;
   margin: 10px;
-  border: 2px solid #666; /* A thick border, dude! */
-}
-
-/* Posts Styles */
-
-#posts-section {
-  background-color: #f2f2f2;
+  border: 2px solid #666;
