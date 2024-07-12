@@ -8,6 +8,7 @@ const postsSection = document.getElementById('posts-section');
 const createPostForm = document.getElementById('create-post-form');
 const postContent = document.getElementById('post-content');
 const postButton = document.getElementById('post-button');
+const postsList = document.getElementById('posts-list');
 
 // Add event listeners
 profileButton.addEventListener('click', () => {
@@ -31,16 +32,28 @@ postsButton.addEventListener('click', () => {
 createPostForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const post = postContent.value.trim();
-  if (post !== '') {
+  if (post!== '') {
     const postHTML = `
       <li>
+        <img src="post-icon.gif" alt="Post Icon">
         <h3>New Post</h3>
         <p>${post}</p>
         <time>Just now</time>
       </li>
     `;
-    const postsList = document.getElementById('posts-list');
     postsList.innerHTML += postHTML;
     postContent.value = '';
   }
 });
+
+// Add some retro flair
+postsList.style.listStyle = 'none';
+postsList.style.padding = '0';
+postsList.style.margin = '0';
+
+const posts = postsList.children;
+for (let i = 0; i < posts.length; i++) {
+  posts[i].style.backgroundImage = 'url("post-bg.gif")';
+  posts[i].style.padding = '10px';
+  posts[i].style.borderBottom = '1px solid #ccc';
+}
