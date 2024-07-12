@@ -35,7 +35,7 @@ body {
   margin: 0;
 }
 
-.header nav ul {
+.nav {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -43,63 +43,63 @@ body {
   justify-content: space-between;
 }
 
-.header nav li {
+.nav li {
   margin-right: 20px;
 }
 
-.header nav a {
+.nav a {
   color: #fff;
   text-decoration: none;
 }
 
 /* Profile Styles */
 
-.profile {
+.profile_section {
   background-color: #f7f7f7;
   padding: 20px;
 }
 
-.profile img {
+.profile_section img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin: 20px;
 }
 
-.profile h2 {
+.profile_section h2 {
   margin-top: 0;
 }
 
-.profile ul {
+.profile_section ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.profile li {
+.profile_section li {
   margin-bottom: 10px;
 }
 
 /* Friends Styles */
 
-.friends {
+.friends_section {
   background-color: #f7f7f7;
   padding: 20px;
 }
 
-.friends ul {
+.friends_section ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.friends li {
+.friends_section li {
   margin-bottom: 20px;
   padding: 20px;
   border-bottom: 1px solid #ddd;
 }
 
-.friends img {
+.friends_section img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -108,28 +108,28 @@ body {
 
 /* Posts Styles */
 
-.posts {
+.posts_section {
   background-color: #f7f7f7;
   padding: 20px;
 }
 
-.posts ul {
+.posts_section ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.posts li {
+.posts_section li {
   margin-bottom: 20px;
   padding: 20px;
   border-bottom: 1px solid #ddd;
 }
 
-.posts h3 {
+.posts_section h3 {
   margin-top: 0;
 }
 
-.posts time {
+.posts_section time {
   font-size: 14px;
   color: #666;
 }
