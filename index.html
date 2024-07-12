@@ -3,21 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MainFrame Profile</title>
+  <title>MainFrame Social Media Platform</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Add some retro fonts -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS:wght@400;700&display=swap');
-    body {
-      font-family: 'Comic Sans MS', sans-serif;
-    }
-  </style>
 </head>
 <body>
-  <!-- Add a retro background image -->
-  <div class="background">
-    <img src="retro-background.jpg" alt="Retro Background">
-  </div>
   <!-- Header section -->
   <header class="header">
     <nav>
@@ -26,47 +15,23 @@
         <li><a id="friends-button" href="#">Friends</a></li>
         <li><a id="posts-button" href="#">Posts</a></li>
       </ul>
+      <input type="search" id="search-bar" placeholder="Search MainFrame">
     </nav>
-    <input type="search" id="search-bar" placeholder="Search MainFrame">
     <h1>MainFrame</h1>
   </header>
 
   <!-- Container section -->
-  <main class="container">
+  <div class="container">
     <!-- Profile section -->
     <section id="profile-section" style="display: block;">
-      <header>
-        <div class="profile-pic">
-          <img src="profile-picture.jpg" alt="Profile Picture">
-        </div>
-        <div class="profile-info">
-          <h1>John Doe</h1>
-          <p>Bio: Software Engineer at MainFrame</p>
-        </div>
-      </header>
-      <section class="about-me">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </section>
-      <section class="friends">
-        <h2>Friends</h2>
-        <ul>
-          <li>Friend 1</li>
-          <li>Friend 2</li>
-          <li>Friend 3</li>
-        </ul>
-      </section>
-      <section class="blog">
-        <h2>Blog</h2>
-        <article>
-          <h3>Blog Post 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </article>
-        <article>
-          <h3>Blog Post 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </article>
-      </section>
+      <h2>Profile</h2>
+      <img src="https://via.placeholder.com/100x100" alt="Default Avatar">
+      <ul>
+        <li><strong>Name:</strong> John Doe</li>
+        <li><strong>Bio:</strong> Software Engineer at MainFrame</li>
+        <li><strong>Followers:</strong> 100</li>
+        <li><strong>Following:</strong> 50</li>
+      </ul>
     </section>
 
     <!-- Friends section -->
@@ -74,19 +39,13 @@
       <h2>Friends</h2>
       <ul>
         <li>
-          <figure>
-            <img src="friend1.jpg" alt="Friend 1">
-            <figcaption>Jane Doe</figcaption>
-          </figure>
+          <img src="https://via.placeholder.com/100x100" alt="Default Avatar">
           <h3>Jane Doe</h3>
           <p>Software Engineer at MainFrame</p>
           <button class="friend-request-button">Add Friend</button>
         </li>
         <li>
-          <figure>
-            <img src="friend2.jpg" alt="Friend 2">
-            <figcaption>Bob Smith</figcaption>
-          </figure>
+          <img src="https://via.placeholder.com/100x100" alt="Default Avatar">
           <h3>Bob Smith</h3>
           <p>Product Manager at MainFrame</p>
           <button class="friend-request-button">Add Friend</button>
@@ -102,21 +61,21 @@
         <button id="post-button">Post</button>
       </form>
       <ul>
-        <!-- Add some retro-style post icons -->
         <li>
-          <img src="post-icon.gif" alt="Post Icon">
-          <p>This is a sample post!</p>
+          <h3>Post 1</h3>
+          <p>This is a sample post.</p>
+          <time>10 minutes ago</time>
+        </li>
+        <li>
+          <h3>Post 2</h3>
+          <p>This is another sample post.</p>
+          <time>1 hour ago</time>
         </li>
       </ul>
     </section>
-  </main>
+  </div>
 
-  <!-- Footer section -->
-  <footer>
-    <p>&copy; 2023 MainFrame Profile</p>
-  </footer>
 
-  <!-- JavaScript Files -->
   <script src="script.js"></script>
 </body>
 </html>
