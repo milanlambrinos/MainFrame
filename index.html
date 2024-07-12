@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MainFrame Social Media Platform</title>
+  <title>MainFrame Profile</title>
   <link rel="stylesheet" href="style.css">
   <!-- Add some retro fonts -->
   <style>
@@ -35,17 +35,38 @@
   <main class="container">
     <!-- Profile section -->
     <section id="profile-section" style="display: block;">
-      <h2>Profile</h2>
-      <figure>
-        <img src="profile-picture.jpg" alt="Profile Picture">
-        <figcaption>John Doe</figcaption>
-      </figure>
-      <ul>
-        <li><strong>Name:</strong> John Doe</li>
-        <li><strong>Bio:</strong> Software Engineer at MainFrame</li>
-        <li><strong>Followers:</strong> 100</li>
-        <li><strong>Following:</strong> 50</li>
-      </ul>
+      <header>
+        <div class="profile-pic">
+          <img src="profile-picture.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+          <h1>John Doe</h1>
+          <p>Bio: Software Engineer at MainFrame</p>
+        </div>
+      </header>
+      <section class="about-me">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </section>
+      <section class="friends">
+        <h2>Friends</h2>
+        <ul>
+          <li>Friend 1</li>
+          <li>Friend 2</li>
+          <li>Friend 3</li>
+        </ul>
+      </section>
+      <section class="blog">
+        <h2>Blog</h2>
+        <article>
+          <h3>Blog Post 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Blog Post 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+      </section>
     </section>
 
     <!-- Friends section -->
@@ -89,5 +110,13 @@
       </ul>
     </section>
   </main>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2023 MainFrame Profile</p>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="script.js"></script>
 </body>
 </html>
