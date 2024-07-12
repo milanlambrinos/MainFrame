@@ -1,41 +1,15 @@
-/* Global Styles */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+/* Add some retro colors and styles */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
+  background-color: #FFC080; /* A warm, nostalgic beige */
 }
-
-.container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Header Styles */
 
 .header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+  background-color: #008000; /* A retro green */
+  padding: 10px;
   text-align: center;
 }
 
-.header h1 {
-  margin: 0;
-}
-
-.nav {
+.header ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -43,93 +17,36 @@ body {
   justify-content: space-between;
 }
 
-.nav li {
+.header li {
   margin-right: 20px;
 }
 
-.nav a {
-  color: #fff;
+.header a {
+  color: #FFFFFF; /* White text */
   text-decoration: none;
 }
 
-/* Profile Styles */
+.header a:hover {
+  color: #FFFF00; /* Yellow hover effect */
+}
 
-.profile_section {
-  background-color: #f7f7f7;
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
   padding: 20px;
-}
-
-.profile_section img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 20px;
-}
-
-.profile_section h2 {
-  margin-top: 0;
-}
-
-.profile_section ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.profile_section li {
-  margin-bottom: 10px;
-}
-
-/* Friends Styles */
-
-.friends_section {
-  background-color: #f7f7f7;
-  padding: 20px;
-}
-
-.friends_section ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.friends_section li {
-  margin-bottom: 20px;
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
-}
-
-.friends_section img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin: 10px;
-}
-
-/* Posts Styles */
-
-.posts_section {
-  background-color: #f7f7f7;
-  padding: 20px;
-}
-
-.posts_section ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.posts_section li {
-  margin-bottom: 20px;
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
-}
-
-.posts_section h3 {
-  margin-top: 0;
-}
-
-.posts_section time {
-  font-size: 14px;
-  color: #666;
-}
+ 
