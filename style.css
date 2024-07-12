@@ -7,10 +7,12 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Comic Sans MS, Arial, sans-serif; /* Yes, Comic Sans! */
   line-height: 1.6;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #f0f0f0; /* A slightly grayer background */
+  background-image: url("https://www.grsites.com/archive/textures/backgrounds/background004.jpg"); /* A classic 90s texture */
+  background-repeat: repeat;
 }
 
 .container {
@@ -18,51 +20,59 @@ body {
   margin: 40px auto;
   padding: 20px;
   background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid #666; /* Thicker border, dude! */
+  border-radius: 10px; /* A slight curve, just like a cassette tape */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* A subtle shadow, bro! */
 }
 
 /* Header Styles */
 
 .header {
-  background-color: #333;
+  background-color: #0066cc; /* A bold, bright blue */
   color: #fff;
   padding: 20px;
   text-align: center;
-  display: flex; /* Add display flex to make nav menu responsive */
-  justify-content: space-between; /* Add justify-content to make nav menu responsive */
+  font-size: 24px; /* Bigger font, dude! */
+  font-weight: bold;
+  border-bottom: 2px solid #333; /* A thick border, just like a VHS tape */
 }
 
 .header h1 {
   margin: 0;
+  font-size: 36px; /* Even bigger font, bro! */
 }
 
 .header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: inline-block; /* Inline-block, just like a table layout */
 }
 
 .header nav li {
   margin-right: 20px;
+  display: inline-block; /* Inline-block, bro! */
 }
 
 .header nav a {
   color: #fff;
   text-decoration: none;
+  font-size: 18px; /* Bigger font, dude! */
+  font-weight: bold;
 }
 
-/* Add hover effect to nav menu items */
 .header nav a:hover {
-  background-color: #444;
+  background-color: #0099cc; /* A bright, bold hover effect */
   color: #fff;
 }
 
 /* Profile Styles */
 
 #profile-section {
-  background-color: #f2f2f2; /* Update background color to a slightly darker gray */
+  background-color: #f2f2f2; /* A light gray background */
   padding: 20px;
+  border: 1px solid #ccc; /* A thin border, just like a Polaroid frame */
+  border-radius: 10px; /* A slight curve, bro! */
 }
 
 #profile-section img {
@@ -70,17 +80,20 @@ body {
   height: 100px;
   border-radius: 50%;
   margin: 20px;
+  border: 2px solid #666; /* A thick border, dude! */
 }
 
 #profile-section h2 {
   margin-top: 0;
+  font-size: 24px; /* Bigger font, bro! */
+  font-weight: bold;
 }
 
 #profile-section ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 20px; /* Add gap class for consistent spacing */
+  gap: 20px; /* Consistent spacing, dude! */
 }
 
 #profile-section li {
@@ -90,21 +103,23 @@ body {
 /* Friends Styles */
 
 #friends-section {
-  background-color: #f2f2f2; /* Update background color to a slightly darker gray */
+  background-color: #f2f2f2; /* A light gray background */
   padding: 20px;
+  border: 1px solid #ccc; /* A thin border, just like a Polaroid frame */
+  border-radius: 10px; /* A slight curve, bro! */
 }
 
 #friends-section ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 20px; /* Add gap class for consistent spacing */
+  gap: 20px; /* Consistent spacing, dude! */
 }
 
 #friends-section li {
   margin-bottom: 20px;
   padding: 20px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; /* A thin border, just like a paperclip */
 }
 
 #friends-section img {
@@ -112,33 +127,19 @@ body {
   height: 100px;
   border-radius: 50%;
   margin: 10px;
+  border: 2px solid #666; /* A thick border, dude! */
 }
 
 /* Posts Styles */
 
 #posts-section {
-  background-color: #f2f2f2; /* Update background color to a slightly darker gray */
+  background-color: #f2f2f2; /* A light gray background */
   padding: 20px;
+  border: 1px solid #ccc; /* A thin border, just like a Polaroid frame */
+  border-radius: 10px; /* A slight curve, bro! */
 }
 
 #posts-section ul {
   list-style: none;
   margin: 0;
-  padding: 0;
-  gap: 20px; /* Add gap class for consistent spacing */
-}
-
-#posts-section li {
-  margin-bottom: 20px;
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
-}
-
-#posts-section h3 {
-  margin-top: 0;
-}
-
-#posts-section time {
-  font-size: 14px;
-  color: #666;
-}
+  padding
