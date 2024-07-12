@@ -8,6 +8,7 @@ const postsSection = document.getElementById('posts-section');
 const createPostForm = document.getElementById('create-post-form');
 const postContent = document.getElementById('post-content');
 const postButton = document.getElementById('post-button');
+const avatarImage = document.getElementById('avatar-image'); // new element
 
 // Add event listeners
 profileButton.addEventListener('click', () => {
@@ -43,4 +44,10 @@ createPostForm.addEventListener('submit', (e) => {
     postsList.innerHTML += postHTML;
     postContent.value = '';
   }
+});
+
+// Add event listener for avatar image
+avatarImage.addEventListener('click', () => {
+  console.log('Avatar image clicked!');
+  // Add any additional functionality here
 });
