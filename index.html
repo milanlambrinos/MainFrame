@@ -1,77 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MainFrame - Social Media Platform</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MainFrame Social Media Platform</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <h1>MainFrame</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Friends</a></li>
-                    <li><a href="#">Settings</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Header section -->
+  <header class="header">
+    <nav>
+      <ul>
+        <li><a id="profile-button" href="#">Profile</a></li>
+        <li><a id="friends-button" href="#">Friends</a></li>
+        <li><a id="posts-button" href="#">Posts</a></li>
+      </ul>
+    </nav>
+    <h1>MainFrame</h1>
+  </header>
 
-    <section class="profile">
-        <div class="container">
-            <h2>Profile</h2>
-            <img src="profile-pic.jpg" alt="Profile Picture">
-            <h3>Username: <span>mainframe_user</span></h3>
-            <p>Bio: This is a sample bio for the MainFrame user.</p>
-            <ul>
-                <li><strong>Friends:</strong> 10</li>
-                <li><strong>Posts:</strong> 20</li>
-            </ul>
-        </div>
+  <!-- Container section -->
+  <div class="container">
+    <!-- Profile section -->
+    <section id="profile-section" style="display: block;">
+      <h2>Profile</h2>
+      <img src="profile-picture.jpg" alt="Profile Picture">
+      <ul>
+        <li><strong>Name:</strong> John Doe</li>
+        <li><strong>Bio:</strong> Software Engineer at MainFrame</li>
+        <li><strong>Followers:</strong> 100</li>
+        <li><strong>Following:</strong> 50</li>
+      </ul>
     </section>
 
-    <section class="friends">
-        <div class="container">
-            <h2>Friends</h2>
-            <ul>
-                <li>
-                    <img src="friend1-pic.jpg" alt="Friend 1 Picture">
-                    <h3>Friend 1</h3>
-                    <p>Bio: This is a sample bio for Friend 1.</p>
-                </li>
-                <li>
-                    <img src="friend2-pic.jpg" alt="Friend 2 Picture">
-                    <h3>Friend 2</h3>
-                    <p>Bio: This is a sample bio for Friend 2.</p>
-                </li>
-                <!-- Add more friends here -->
-            </ul>
-        </div>
+    <!-- Friends section -->
+    <section id="friends-section" style="display: none;">
+      <h2>Friends</h2>
+      <ul>
+        <li>
+          <img src="friend1.jpg" alt="Friend 1">
+          <h3>Jane Doe</h3>
+          <p>Software Engineer at MainFrame</p>
+        </li>
+        <li>
+          <img src="friend2.jpg" alt="Friend 2">
+          <h3>Bob Smith</h3>
+          <p>Product Manager at MainFrame</p>
+        </li>
+      </ul>
     </section>
 
-    <section class="posts">
-        <div class="container">
-            <h2>Posts</h2>
-            <ul>
-                <li>
-                    <h3>Post 1</h3>
-                    <p>This is a sample post for MainFrame.</p>
-                    <span>Posted on: <time>2023-02-20</time></span>
-                </li>
-                <li>
-                    <h3>Post 2</h3>
-                    <p>This is another sample post for MainFrame.</p>
-                    <span>Posted on: <time>2023-02-22</time></span>
-                </li>
-                <!-- Add more posts here -->
-            </ul>
-        </div>
+    <!-- Posts section -->
+    <section id="posts-section" style="display: none;">
+      <h2>Posts</h2>
+      <ul>
+        <li>
+          <h3>Post 1</h3>
+          <p>This is a sample post.</p>
+          <time>10 minutes ago</time>
+        </li>
+        <li>
+          <h3>Post 2</h3>
+          <p>This is another sample post.</p>
+          <time>1 hour ago</time>
+        </li>
+      </ul>
     </section>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
