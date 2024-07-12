@@ -15,6 +15,7 @@
         <li><a id="friends-button" href="#">Friends</a></li>
         <li><a id="posts-button" href="#">Posts</a></li>
       </ul>
+      <input type="search" id="search-bar" placeholder="Search MainFrame">
     </nav>
     <h1>MainFrame</h1>
   </header>
@@ -41,11 +42,13 @@
           <img src="friend1.jpg" alt="Friend 1">
           <h3>Jane Doe</h3>
           <p>Software Engineer at MainFrame</p>
+          <button class="friend-request-button">Add Friend</button>
         </li>
         <li>
           <img src="friend2.jpg" alt="Friend 2">
           <h3>Bob Smith</h3>
           <p>Product Manager at MainFrame</p>
+          <button class="friend-request-button">Add Friend</button>
         </li>
       </ul>
     </section>
@@ -53,6 +56,10 @@
     <!-- Posts section -->
     <section id="posts-section" style="display: none;">
       <h2>Posts</h2>
+      <form id="create-post-form">
+        <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+        <button id="post-button">Post</button>
+      </form>
       <ul>
         <li>
           <h3>Post 1</h3>
