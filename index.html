@@ -15,17 +15,21 @@
         <li><a id="friends-button" href="#">Friends</a></li>
         <li><a id="posts-button" href="#">Posts</a></li>
       </ul>
-      <input type="search" id="search-bar" placeholder="Search MainFrame">
     </nav>
+    <input type="search" id="search-bar" placeholder="Search MainFrame">
+    </ul> <!-- Add this closing ul tag -->
     <h1>MainFrame</h1>
   </header>
 
   <!-- Container section -->
-  <div class="container">
+  <main class="container"> <!-- Use main instead of div -->
     <!-- Profile section -->
     <section id="profile-section" style="display: block;">
       <h2>Profile</h2>
-      <img src="profile-picture.jpg" alt="Profile Picture">
+      <figure>
+        <img src="profile-picture.jpg" alt="Profile Picture">
+        <figcaption>John Doe</figcaption>
+      </figure>
       <ul>
         <li><strong>Name:</strong> John Doe</li>
         <li><strong>Bio:</strong> Software Engineer at MainFrame</li>
@@ -39,13 +43,19 @@
       <h2>Friends</h2>
       <ul>
         <li>
-          <img src="friend1.jpg" alt="Friend 1">
+          <figure>
+            <img src="friend1.jpg" alt="Friend 1">
+            <figcaption>Jane Doe</figcaption>
+          </figure>
           <h3>Jane Doe</h3>
           <p>Software Engineer at MainFrame</p>
           <button class="friend-request-button">Add Friend</button>
         </li>
         <li>
-          <img src="friend2.jpg" alt="Friend 2">
+          <figure>
+            <img src="friend2.jpg" alt="Friend 2">
+            <figcaption>Bob Smith</figcaption>
+          </figure>
           <h3>Bob Smith</h3>
           <p>Product Manager at MainFrame</p>
           <button class="friend-request-button">Add Friend</button>
@@ -73,8 +83,4 @@
         </li>
       </ul>
     </section>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  </
