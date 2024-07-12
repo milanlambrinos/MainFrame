@@ -1,98 +1,81 @@
-/* Global Styles */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MainFrame Social Media Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header section -->
+  <header class="header">
+    <nav>
+      <ul>
+        <li><a id="profile-button" href="#">Profile</a></li>
+        <li><a id="friends-button" href="#">Friends</a></li>
+        <li><a id="posts-button" href="#">Posts</a></li>
+      </ul>
+      <input type="search" id="search-bar" placeholder="Search MainFrame">
+    </nav>
+    <h1>MainFrame</h1>
+  </header>
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  <!-- Container section -->
+  <div class="container">
+    <!-- Profile section -->
+    <section id="profile-section" style="display: block;">
+      <h2>Profile</h2>
+      <img src="https://via.placeholder.com/100x100" alt="Default Avatar">
+      <ul>
+        <li><strong>Name:</strong> John Doe</li>
+        <li><strong>Bio:</strong> Software Engineer at MainFrame</li>
+        <li><strong>Followers:</strong> 100</li>
+        <li><strong>Following:</strong> 50</li>
+      </ul>
+    </section>
 
-body {
-  font-family: {{ fontFamily }}; /* Choose your own font, bro! */
-  line-height: 1.6;
-  color: {{ textColor }}; /* Pick your own text color, dude! */
-  background-color: {{ backgroundColor }}; /* Select your own background color, man! */
-  background-image: url({{ backgroundImage }}); /* Add your own background image, bro! */
-  background-repeat: repeat;
-}
+    <!-- Friends section -->
+    <section id="friends-section" style="display: none;">
+      <h2>Friends</h2>
+      <ul>
+        <li>
+          <img src="https://via.placeholder.com/100x100" alt="Default Avatar">
+          <h3>Jane Doe</h3>
+          <p>Software Engineer at MainFrame</p>
+          <button class="friend-request-button">Add Friend</button>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/100x100" alt="Default Avatar">
+          <h3>Bob Smith</h3>
+          <p>Product Manager at MainFrame</p>
+          <button class="friend-request-button">Add Friend</button>
+        </li>
+      </ul>
+    </section>
 
-.container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: {{ containerBackgroundColor }}; /* Choose your own container background color, dude! */
-  border: 2px solid {{ containerBorderColor }}; /* Pick your own container border color, bro! */
-  border-radius: 10px; /* A slight curve, just like a cassette tape */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* A subtle shadow, man! */
-}
+    <!-- Posts section -->
+    <section id="posts-section" style="display: none;">
+      <h2>Posts</h2>
+      <form id="create-post-form">
+        <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+        <button id="post-button">Post</button>
+      </form>
+      <ul>
+        <li>
+          <h3>Post 1</h3>
+          <p>This is a sample post.</p>
+          <time>10 minutes ago</time>
+        </li>
+        <li>
+          <h3>Post 2</h3>
+          <p>This is another sample post.</p>
+          <time>1 hour ago</time>
+        </li>
+      </ul>
+    </section>
+  </div>
 
-/* Header Styles */
 
-.header {
-  background-color: {{ headerBackgroundColor }}; /* Choose your own header background color, bro! */
-  color: {{ headerTextColor }}; /* Pick your own header text color, dude! */
-  padding: 20px;
-  text-align: center;
-  font-size: 24px; /* Bigger font, dude! */
-  font-weight: bold;
-  border-bottom: 2px solid {{ headerBorderColor }}; /* Choose your own header border color, man! */
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 36px; /* Even bigger font, bro! */
-  font-family: {{ headerFontFamily }}; /* Choose your own header font, dude! */
-}
-
-/* Profile Styles */
-
-#profile-section {
-  background-color: {{ profileBackgroundColor }}; /* Choose your own profile background color, bro! */
-  padding: 20px;
-  border: 1px solid {{ profileBorderColor }}; /* Pick your own profile border color, dude! */
-  border-radius: 10px; /* A slight curve, bro! */
-}
-
-#profile-section img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 20px;
-  border: 2px solid {{ profileImageBorderColor }}; /* Choose your own profile image border color, man! */
-}
-
-#profile-section h2 {
-  margin-top: 0;
-  font-size: 24px; /* Bigger font, bro! */
-  font-weight: bold;
-  font-family: {{ profileFontFamily }}; /* Choose your own profile font, dude! */
-}
-
-/* Friends Styles */
-
-#friends-section {
-  background-color: {{ friendsBackgroundColor }}; /* Choose your own friends background color, bro! */
-  padding: 20px;
-  border: 1px solid {{ friendsBorderColor }}; /* Pick your own friends border color, dude! */
-  border-radius: 10px; /* A slight curve, bro! */
-}
-
-#friends-section ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 20px; /* Consistent spacing, dude! */
-}
-
-#friends-section li {
-  margin-bottom: 20px;
-  padding: 20px;
-  border-bottom: 1px solid {{ friendsListItemBorderColor }}; /* Choose your own friends list item border color, man! */
-}
-
-#friends-section img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 10px;
-  border: 2px solid {{ friendsImageBorderColor }}; /* Choose your own friends image border color, bro! */
-}
+  <script src="script.js"></script>
+</body>
+</html>
