@@ -5,8 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MainFrame Social Media Platform</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Add some retro fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS:wght@400;700&display=swap');
+    body {
+      font-family: 'Comic Sans MS', sans-serif;
+    }
+  </style>
 </head>
 <body>
+  <!-- Add a retro background image -->
+  <div class="background">
+    <img src="retro-background.jpg" alt="Retro Background">
+  </div>
   <!-- Header section -->
   <header class="header">
     <nav>
@@ -17,12 +28,11 @@
       </ul>
     </nav>
     <input type="search" id="search-bar" placeholder="Search MainFrame">
-    </ul> <!-- Add this closing ul tag -->
     <h1>MainFrame</h1>
   </header>
 
   <!-- Container section -->
-  <main class="container"> <!-- Use main instead of div -->
+  <main class="container">
     <!-- Profile section -->
     <section id="profile-section" style="display: block;">
       <h2>Profile</h2>
@@ -71,16 +81,13 @@
         <button id="post-button">Post</button>
       </form>
       <ul>
+        <!-- Add some retro-style post icons -->
         <li>
-          <h3>Post 1</h3>
-          <p>This is a sample post.</p>
-          <time>10 minutes ago</time>
-        </li>
-        <li>
-          <h3>Post 2</h3>
-          <p>This is another sample post.</p>
-          <time>1 hour ago</time>
+          <img src="post-icon.gif" alt="Post Icon">
+          <p>This is a sample post!</p>
         </li>
       </ul>
     </section>
-  </
+  </main>
+</body>
+</html>
