@@ -7,7 +7,71 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Our social media platform content will go here -->
+    <header class="header">
+        <div class="container">
+            <h1>MainFrame</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Friends</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="profile">
+        <div class="container">
+            <h2>Profile</h2>
+            <img src="profile-pic.jpg" alt="Profile Picture">
+            <h3>Username: <span>mainframe_user</span></h3>
+            <p>Bio: This is a sample bio for the MainFrame user.</p>
+            <ul>
+                <li><strong>Friends:</strong> 10</li>
+                <li><strong>Posts:</strong> 20</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="friends">
+        <div class="container">
+            <h2>Friends</h2>
+            <ul>
+                <li>
+                    <img src="friend1-pic.jpg" alt="Friend 1 Picture">
+                    <h3>Friend 1</h3>
+                    <p>Bio: This is a sample bio for Friend 1.</p>
+                </li>
+                <li>
+                    <img src="friend2-pic.jpg" alt="Friend 2 Picture">
+                    <h3>Friend 2</h3>
+                    <p>Bio: This is a sample bio for Friend 2.</p>
+                </li>
+                <!-- Add more friends here -->
+            </ul>
+        </div>
+    </section>
+
+    <section class="posts">
+        <div class="container">
+            <h2>Posts</h2>
+            <ul>
+                <li>
+                    <h3>Post 1</h3>
+                    <p>This is a sample post for MainFrame.</p>
+                    <span>Posted on: <time>2023-02-20</time></span>
+                </li>
+                <li>
+                    <h3>Post 2</h3>
+                    <p>This is another sample post for MainFrame.</p>
+                    <span>Posted on: <time>2023-02-22</time></span>
+                </li>
+                <!-- Add more posts here -->
+            </ul>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
