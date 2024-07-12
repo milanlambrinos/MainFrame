@@ -29,6 +29,8 @@ body {
   color: #fff;
   padding: 20px;
   text-align: center;
+  display: flex; /* Add display flex to make nav menu responsive */
+  justify-content: space-between; /* Add justify-content to make nav menu responsive */
 }
 
 .header h1 {
@@ -39,8 +41,6 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
 }
 
 .header nav li {
@@ -52,10 +52,16 @@ body {
   text-decoration: none;
 }
 
+/* Add hover effect to nav menu items */
+.header nav a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
 /* Profile Styles */
 
 #profile-section {
-  background-color: #f7f7f7;
+  background-color: #f2f2f2; /* Update background color to a slightly darker gray */
   padding: 20px;
 }
 
@@ -74,6 +80,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 20px; /* Add gap class for consistent spacing */
 }
 
 #profile-section li {
@@ -83,7 +90,7 @@ body {
 /* Friends Styles */
 
 #friends-section {
-  background-color: #f7f7f7;
+  background-color: #f2f2f2; /* Update background color to a slightly darker gray */
   padding: 20px;
 }
 
@@ -91,6 +98,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 20px; /* Add gap class for consistent spacing */
 }
 
 #friends-section li {
@@ -109,7 +117,7 @@ body {
 /* Posts Styles */
 
 #posts-section {
-  background-color: #f7f7f7;
+  background-color: #f2f2f2; /* Update background color to a slightly darker gray */
   padding: 20px;
 }
 
@@ -117,6 +125,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 20px; /* Add gap class for consistent spacing */
 }
 
 #posts-section li {
